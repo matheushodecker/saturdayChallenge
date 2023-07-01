@@ -21,7 +21,7 @@
 
     Se o usuário quiser alugar um carro, o programa deverá perguntar se deseja contratar seguro do veículo. Caso deseja contratar, deverá apresentar as seguintes opções:
     -> 1: Contratar seguro total -> 8% a mais do preço do aluguel do carro por dia
-    -> 2: Contratar seguro parcial -> 5% a mais do preço do aluguel do carro por dia
+    -> 2: Contratar seguro parchttps://github.com/matheushodecker/saturdayChallenge/invitationsial -> 5% a mais do preço do aluguel do carro por dia
     -> 3: Contratar seguro contra roubos -> 4% a mais do preço do aluguel do carro por dia
     -> 4: Contratar seguro contra terceiros -> 3% a mais do preço do aluguel do carro por dia
     -> 5: Não contratar seguro
@@ -32,4 +32,40 @@
 
     Informe ao usuário o valor total da viagem e a forma de pagamento escolhida. Pergunte se ele deseja parcelar o pagamento, sendo que o prazo máximo para pagar a diferneça é de 4 vezes. Caso o prazo informado pelo usuário seja inválido, o programa deverá exibir uma mensagem de erro e perguntar novamente o prazo para pagar a diferença. Informando um dado válido, o programa deverá exibir o valor total da viagem. Se for o caso, o programa deverá exibir o valor adicional a ser pago, correspondendo com a diferença que deverá custar além do que possui guardado. O programa também deverá mostrar a Forma de pagamento escolhida para pagar tal diferença e, se for o caso, o valor de cada parcela a ser paga. 
     */
+
+    //ENTRADA
+    let Dinheiro = Number(prompt("informe quanto dinheiro em (R$) voce tem para a viagem"));
+    if (isNaN(Dinheiro)) {
+        alert(`valor invalido, informe novamete!`)
+        Dinheiro = Number(prompt("informe quanto dinheiro em (R$) voce tem para a viagem"));
+        if (isNaN(Dinheiro)) {
+            alert(`valor invalido, informe novamete!`);
+            Dinheiro = Number(prompt("informe quanto dinheiro em (R$) voce tem para a viagem"));
+            if (isNaN(Dinheiro)) {
+                alert(`excesso de tentativas, o programa sera fechado!`).stop();
+            }
+        }
+    }
+    let regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`);
+
+    if (regiaoDestino - "NO" && regiaoDestino != "NE" && regiaoDestino != "CO" && regiaoDestino != "SU" && regiaoDestino != "SE") {
+        alert("Região inválida! Informe novamente!");
+        regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`);
+        if (regiaoDestino - "NO" && regiaoDestino != "NE" && regiaoDestino != "CO" && regiaoDestino != "SU" && regiaoDestino != "SE") {
+            alert("Região inválida! Informe novamente!");
+            regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`);
+            if (regiaoDestino - "NO" && regiaoDestino != "NE" && regiaoDestino != "CO" && regiaoDestino != "SU" && regiaoDestino != "SE") {
+                alert("Região inválida! Informe novamente!");
+                regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`).stop();
+            }
+
+        }
+
+    }
+    else if( regiaoDestino === "NO"){
+        alert(sad)
+    }
+    else{
+        alert(sad)
+    }
 </script>
