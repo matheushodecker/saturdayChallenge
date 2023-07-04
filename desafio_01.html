@@ -56,29 +56,64 @@
             regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`);
             if (regiaoDestino != "NO" && regiaoDestino != "NE" && regiaoDestino != "CO" && regiaoDestino != "SU" && regiaoDestino != "SE") {
                 alert("Região inválida! Informe novamente!");
-                regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`).stop().toUpperCase();
+                regiaoDestino = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`).stop();
             }
 
         }
 
     }
     else if( regiaoDestino === "NO"){
-        alert(
-            sad)
+        alert("NO");
     }
     else if( regiaoDestino === "NE"){
-        alert(sad)
+        alert("NE");
     }
     else if( regiaoDestino === "CO"){
-        alert(sad)
+        alert("CO");
     }
     else if( regiaoDestino === "SU"){
-        alert(sad)
+        alert("SU");
     }
     else if( regiaoDestino === "SE"){
-        alert(sad)
+        alert("SE");
     }
     else{
-        alert(sad)
+        alert("sad");
     }
+
+    let regiaoOrigem = prompt(`Informe a região de origem: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`).toUpperCase();
+    
+    if (regiaoOrigem != "NO" && regiaoOrigem != "NE" && regiaoOrigem != "CO" && regiaoOrigem != "SU" && regiaoOrigem != "SE") {
+        alert("Região inválida! Informe novamente!");
+        regiaoOrigem = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`).toUpperCase();
+        if (regiaoOrigem != "NO" && regiaoOrigem != "NE" && regiaoOrigem != "CO" && regiaoOrigem != "SU" && regiaoOrigem != "SE") {
+            alert("Região inválida! Informe novamente!");
+            regiaoOrigem = prompt(`Informe a região de origem: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`);
+            if (regiaoOrigem != "NO" && regiaoOrigem != "NE" && regiaoOrigem != "CO" && regiaoOrigem != "SU" && regiaoOrigem != "SE") {
+                alert("Região inválida! Informe novamente!");
+                regiaoOrigem = prompt(`Informe a região de destino: \n1 - Sul(SU) \n2 - Sudeste(SE) \n3 - Centro-Oeste(CO) \n4 - Nordeste(NE) \n5 - Norte(NO)`).stop();
+            }
+
+        }
+
+    }
+    else if( regiaoOrigem === "NO"){
+        alert("NO");regiaoDestino
+    }
+    else if( regiaoOrigem === "NE"){
+        alert("NE");
+    }
+    else if( regiaoOrigem === "CO"){
+        alert("CO");
+    }
+    else if( regiaoOrigem === "SU"){
+        alert("SU");
+    }
+    else if( regiaoOrigem === "SE"){
+        alert("SE");
+    }
+    else{
+        alert("sad");
+    }
+
 </script>
